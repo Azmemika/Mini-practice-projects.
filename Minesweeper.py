@@ -2,7 +2,7 @@ from numpy import *
 import random
 import numpy as np
 
-size = int(input("Enter the size of the matrix (n x n): "))
+size = int(input("Enter the size of the board: "))
 
 max_twos = (size * size) // 4
 
@@ -53,4 +53,5 @@ while True:
         matrixshown[rowposition][columnposition] = 1
         print("\nThe board is")
         for i in matrixshown:
+
             print(*i)
