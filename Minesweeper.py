@@ -6,6 +6,7 @@ size = int(input("Enter the size of the matrix (n x n): "))
 
 max_twos = (size * size) // 4
 
+#The actual matrix with bombs and safe spots
 matrixreal = np.random.choice([1], size=(size, size))
 
 for (r, c) in random.sample([(i, j) for i in range(size) for j in range(size)], max_twos):
@@ -16,6 +17,7 @@ for (r, c) in random.sample([(i, j) for i in range(size) for j in range(size)], 
 
 # 1 = safe, 2 = bomb
 
+#The matrix that is to be shown to the user
 first_row = [(0)] + [chr(65 + i) for i in range(0, size)]
 
 matrixshown = [first_row]
