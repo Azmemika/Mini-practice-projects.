@@ -53,5 +53,4 @@ while True:
         matrixshown[rowposition][columnposition] = 1
         print("\nThe board is")
         for i in matrixshown:
-
             print(*i)
